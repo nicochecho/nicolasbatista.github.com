@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(255, 255, 255);
+	min-height: 100vh;
+}
+input[type=text], input[type=email], select {
+	border: 3px solid rgba(75, 76, 236, 0.7);
+  	border-radius: 4px;
+}
+
+.botones {
+	background-color: rgba(75, 76, 236);
+}
+
+.contenedor {
+	width: 1200px;
+	margin: auto;
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+	.inicio {
+		background-image: url("../images/inicio.svg");
+		height: 100vh;
+		background-position: center;
+		background-size: cover;
+	}
+
+	/*TITULO PRINCIPAL*/
+	.t_principal {
+		font-size: 80px;
+	}
+	.t_destacado {
+		color: #4b4cec;
+	}
+
+/* CARTEL RESULTADO */
+.resultado-contenedor {
+	width: 210vh;
+	height: 100vh;
+	background-color: rgb(175, 175, 175, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	visibility: hidden;
+	opacity: 0;
+}
+
+#cartel {
+	height: 600px;
+	width: 600px;
+	background-color: white;
+	border-radius: 14px;
+}
+
+.cartel-activo {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* CARTAS DE SERVICIOS A CONTRATAR*/
+.cartita {
+	/* box-shadow: 0px 4px 94px 0px #00000026; */
+	background-color: #4b4cec;
+	border-radius: 30px;
+	width: 18rem;
+}
